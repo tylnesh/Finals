@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.7)  17 MAY 2018 02:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.9)  21 MAY 2018 11:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -333,21 +333,21 @@ Package csquotes Info: ... found 'babel' package.
  (./Informacne technologie.aux)
 \openout1 = `"Informacne technologie.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for IL2/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Try loading font information for IL2+lmr on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for IL2/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Try loading font information for IL2+lmr on input line 44.
  (/usr/share/texmf/tex/latex/lm/il2lmr.fd
 File: il2lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -518,12 +518,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ]
 Chapter 1.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 74.
+(Font)              <9> on input line 73.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 74.
+(Font)              <5> on input line 73.
 
-Overfull \hbox (3.53111pt too wide) in paragraph at lines 74--76
-[] \IL2/lmr/bx/n/10.95 Práca CPU \IL2/lmr/m/n/10.95 Zák-lad-nou funkciou CPI je
+Overfull \hbox (7.78958pt too wide) in paragraph at lines 73--75
+[] \IL2/lmr/bx/n/10.95 Práca CPU \IL2/lmr/m/n/10.95 Zák-lad-nou funkciou CPU je
  vykoná-va» sekven-ciu ulo¾ených in-¹truk-cií[]. Vykoná-
  []
 
@@ -534,14 +534,14 @@ Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 [2
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 85.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 84.
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 85.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 84.
 
-Overfull \hbox (5.9067pt too wide) in paragraph at lines 88--89
+Overfull \hbox (5.9067pt too wide) in paragraph at lines 87--88
 \IL2/lmr/m/n/10.95 Viac kom-plexné mikro-pro-ce-sory súèas-nosti ob-sahujú aj t
 zv. \IL2/lmr/bx/n/10.95 jed-notku prideµo-va-nia pamäte\IL2/lmr/m/n/10.95 ,
  []
@@ -549,14 +549,14 @@ zv. \IL2/lmr/bx/n/10.95 jed-notku prideµo-va-nia pamäte\IL2/lmr/m/n/10.95 ,
 <images/ABasicComputer.jpg, id=19, 702.625pt x 542.025pt>
 File: images/ABasicComputer.jpg Graphic file (type jpg)
 <use images/ABasicComputer.jpg>
-Package pdftex.def Info: images/ABasicComputer.jpg  used on input line 92.
+Package pdftex.def Info: images/ABasicComputer.jpg  used on input line 91.
 (pdftex.def)             Requested size: 281.04501pt x 216.80615pt.
 
 Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 
 
 [3 <./images/ABasicComputer.jpg>]
-Overfull \hbox (4.6344pt too wide) in paragraph at lines 99--100
+Overfull \hbox (4.6344pt too wide) in paragraph at lines 98--99
 [] \IL2/lmr/bx/n/10.95 ALU \IL2/lmr/m/n/10.95 Ar-it-met-icko log-ická jed-notka
  je kom-bi-naèný dig-itálny elek-trický ob-vod, ktorý vykonáva
  []
@@ -565,19 +565,51 @@ Overfull \hbox (4.6344pt too wide) in paragraph at lines 99--100
 File: images/MMU_principle_updated.png Graphic file (type png)
 <use images/MMU_principle_updated.png>
 Package pdftex.def Info: images/MMU_principle_updated.png  used on input line 1
-34.
+33.
 (pdftex.def)             Requested size: 228.35156pt x 142.6319pt.
 
 Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 
 
 [4]
-Overfull \hbox (8.08354pt too wide) in paragraph at lines 146--162
+<images/Von_Neumann_Architecture.png, id=30, 441.65pt x 255.95625pt>
+File: images/Von_Neumann_Architecture.png Graphic file (type png)
+<use images/Von_Neumann_Architecture.png>
+Package pdftex.def Info: images/Von_Neumann_Architecture.png  used on input lin
+e 151.
+(pdftex.def)             Requested size: 264.99203pt x 153.57492pt.
+
+Overfull \vbox (1.61752pt too high) has occurred while \output is active []
+
+
+[5 <./images/MMU_principle_updated.png>]
+Overfull \hbox (4.09763pt too wide) in paragraph at lines 165--166
+[] \IL2/lmr/m/n/10.95 Na-priek roz¹írenosti mod-i-fiko-vanej vari-anty, aj prav
+á Har-vard-ská ar-chitek-túra má dodnes
+ []
+
+
+Overfull \vbox (1.61752pt too high) has occurred while \output is active []
+
+
+[6 <./images/Von_Neumann_Architecture.png>]
+<images/Harvard_Architecture.png, id=40, 441.65pt x 281.05pt>
+File: images/Harvard_Architecture.png Graphic file (type png)
+<use images/Harvard_Architecture.png>
+Package pdftex.def Info: images/Harvard_Architecture.png  used on input line 17
+4.
+(pdftex.def)             Requested size: 264.99203pt x 168.63129pt.
+
+Overfull \vbox (1.61752pt too high) has occurred while \output is active []
+
+
+[7 <./images/Harvard_Architecture.png>]
+Overfull \hbox (8.08354pt too wide) in paragraph at lines 185--201
  [] 
  []
 
 
-Overfull \hbox (1.20384pt too wide) in paragraph at lines 164--165
+Overfull \hbox (1.20384pt too wide) in paragraph at lines 203--204
 [] \IL2/lmr/bx/n/10.95 CISC \IL2/lmr/m/n/10.95 Star¹í z ty-pov. Jed-notlivé in-
 ¹truk-cie sú schopné vykoná-va» vi-acero nízko-úrovnòových
  []
@@ -586,32 +618,23 @@ Overfull \hbox (1.20384pt too wide) in paragraph at lines 164--165
 Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 
 
-[5 <./images/MMU_principle_updated.png>]
+[8]
 Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 
 
-[6]
-Overfull \vbox (1.61752pt too high) has occurred while \output is active []
-
-
-[7]
+[9]
 Chapter 2.
 
-Overfull \vbox (1.61752pt too high) has occurred while \output is active []
+Overfull \hbox (2.8902pt too wide) in paragraph at lines 227--228
+\IL2/lmr/m/it/10.95 ných poèí-taèov z hµadiska Fly-n-novej klasi-fiká-cie v súè
+as-nosti, par-aleliz-mus v pro-ce-soroch (porov-
+ []
 
-
-[8
-
-]
-Chapter 3.
-
-Overfull \vbox (1.61752pt too high) has occurred while \output is active []
-
-
-[9
-
-]
-Chapter 4.
+<images/SMP.png, id=51, 883.3pt x 568.1225pt>
+File: images/SMP.png Graphic file (type png)
+<use images/SMP.png>
+Package pdftex.def Info: images/SMP.png  used on input line 240.
+(pdftex.def)             Requested size: 353.31374pt x 227.24496pt.
 
 Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 
@@ -619,31 +642,41 @@ Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 [10
 
 ]
-Chapter 5.
+Overfull \vbox (1.61752pt too high) has occurred while \output is active []
+
+
+[11 <./images/SMP.png>]
+<images/SISD.png, id=59, 451.6875pt x 451.6875pt>
+File: images/SISD.png Graphic file (type png)
+<use images/SISD.png>
+Package pdftex.def Info: images/SISD.png  used on input line 262.
+(pdftex.def)             Requested size: 180.67178pt x 180.67178pt.
+<images/SIMD.png, id=60, 441.65pt x 454.69875pt>
+File: images/SIMD.png Graphic file (type png)
+<use images/SIMD.png>
+Package pdftex.def Info: images/SIMD.png  used on input line 271.
+(pdftex.def)             Requested size: 110.41222pt x 113.67441pt.
 
 Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 
 
-[11
-
-]
-Chapter 6.
+[12 <./images/SISD.png> <./images/SIMD.png>]
+<images/MISD.png, id=67, 451.6875pt x 451.6875pt>
+File: images/MISD.png Graphic file (type png)
+<use images/MISD.png>
+Package pdftex.def Info: images/MISD.png  used on input line 281.
+(pdftex.def)             Requested size: 112.92159pt x 112.92159pt.
+<images/MIMD.png, id=68, 451.6875pt x 451.6875pt>
+File: images/MIMD.png Graphic file (type png)
+<use images/MIMD.png>
+Package pdftex.def Info: images/MIMD.png  used on input line 290.
+(pdftex.def)             Requested size: 112.92159pt x 112.92159pt.
 
 Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 
 
-[12
-
-]
-Chapter 7.
-
-Overfull \vbox (1.61752pt too high) has occurred while \output is active []
-
-
-[13
-
-]
-Chapter 8.
+[13 <./images/MISD.png> <./images/MIMD.png>]
+Chapter 3.
 
 Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 
@@ -651,12 +684,52 @@ Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 [14
 
 ]
-Chapter 9.
+Chapter 4.
 
 Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 
 
 [15
+
+]
+Chapter 5.
+
+Overfull \vbox (1.61752pt too high) has occurred while \output is active []
+
+
+[16
+
+]
+Chapter 6.
+
+Overfull \vbox (1.61752pt too high) has occurred while \output is active []
+
+
+[17
+
+]
+Chapter 7.
+
+Overfull \vbox (1.61752pt too high) has occurred while \output is active []
+
+
+[18
+
+]
+Chapter 8.
+
+Overfull \vbox (1.61752pt too high) has occurred while \output is active []
+
+
+[19
+
+]
+Chapter 9.
+
+Overfull \vbox (1.61752pt too high) has occurred while \output is active []
+
+
+[20
 
 ]
 Chapter 10.
@@ -666,7 +739,7 @@ File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 
 
-[16
+[21
 
 ]
 Chapter 11.
@@ -674,18 +747,18 @@ Chapter 11.
 Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 
 
-[17
+[22
 
 ]
 Chapter 12.
 
-Overfull \hbox (1.96672pt too wide) in paragraph at lines 224--225
+Overfull \hbox (1.96672pt too wide) in paragraph at lines 342--343
 [] \IL2/lmr/bx/n/10.95 Ko-r-pus: \IL2/lmr/m/n/10.95 Reprezen-tá-cia poz-natkov,
  po¾i-a-davky na jazyk pre reprezen-tá-ciu poz-natkov, logika
  []
 
 
-Overfull \hbox (0.29767pt too wide) in paragraph at lines 224--225
+Overfull \hbox (0.29767pt too wide) in paragraph at lines 342--343
 \IL2/lmr/m/n/10.95 (výroková, prediká-tová), pravidlá, vizual-izá-cia pra-vi-di
 el po-mo-cou AND/OR grafu, sé-mantické
  []
@@ -694,7 +767,7 @@ el po-mo-cou AND/OR grafu, sé-mantické
 Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 
 
-[18
+[23
 
 ]
 Chapter 13.
@@ -702,7 +775,7 @@ Chapter 13.
 Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 
 
-[19
+[24
 
 ]
 Chapter 14.
@@ -710,7 +783,7 @@ Chapter 14.
 Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 
 
-[20
+[25
 
 ]
 Chapter 15.
@@ -718,7 +791,7 @@ Chapter 15.
 Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 
 
-[21
+[26
 
 ]
 Chapter 16.
@@ -726,7 +799,7 @@ Chapter 16.
 Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 
 
-[22
+[27
 
 ]
 Chapter 17.
@@ -734,7 +807,7 @@ Chapter 17.
 Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 
 
-[23
+[28
 
 ]
 Chapter 18.
@@ -742,7 +815,7 @@ Chapter 18.
 Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 
 
-[24
+[29
 
 ]
 Chapter 19.
@@ -750,12 +823,12 @@ Chapter 19.
 Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 
 
-[25
+[30
 
 ]
 Chapter 20.
 
-Overfull \hbox (12.1762pt too wide) in paragraph at lines 256--257
+Overfull \hbox (12.1762pt too wide) in paragraph at lines 374--375
 [] \IL2/lmr/bx/n/10.95 Ko-r-pus: \IL2/lmr/m/n/10.95 Ri-ade-nie výrob-ných stro-
 jov, robotov a výrob-ných sys-té-mov. Au-tom-a-tizá-cia nevýrob-
  []
@@ -764,17 +837,17 @@ jov, robotov a výrob-ných sys-té-mov. Au-tom-a-tizá-cia nevýrob-
 Overfull \vbox (1.61752pt too high) has occurred while \output is active []
 
 
-[26
+[31
 
 ] (./Informacne technologie.aux) ) 
 Here is how much of TeX's memory you used:
- 8272 strings out of 492982
- 115301 string characters out of 6134897
- 201213 words of memory out of 5000000
- 11656 multiletter control sequences out of 15000+600000
+ 8314 strings out of 492982
+ 116139 string characters out of 6134897
+ 201215 words of memory out of 5000000
+ 11691 multiletter control sequences out of 15000+600000
  53137 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,10n,42p,1477b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,10n,42p,1540b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathi
 t.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/font
 s/enc/dvips/lm/lm-cs.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></u
@@ -784,10 +857,10 @@ re/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm
 /lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fo
 nts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.p
 fb>
-Output written on "Informacne technologie.pdf" (27 pages, 288096 bytes).
+Output written on "Informacne technologie.pdf" (32 pages, 418007 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+ 165 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

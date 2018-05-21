@@ -3,7 +3,7 @@
 \usepackage[slovak,english]{babel}
 \usepackage[IL2]{fontenc}
 \usepackage{amsmath}
-\usepackage{amsfonts}
+\usepackage{amsfonts}%
 \usepackage{amssymb}
 \usepackage{makeidx}
 \usepackage{graphicx}
@@ -13,8 +13,7 @@
 \usepackage{setspace}
 \usepackage[left=3.5cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \author{Bc. Michal Kohútek}
-\title{Rozpoznávanie emocionálneho stavu používateľa pomocou inteligentných 
-riadiacich systémov}
+\title{Informačné technológia}
 
 \graphicspath{ {./images/} }
 
@@ -71,7 +70,7 @@ riadiacich systémov}
 
 \section{CPU} Central Processing Unit, alebo procesor, interpretuje, vykonáva inštrukcie a spracúva dáta programu vo forme strojového kódu. V dnešnej dobe je zvyčajne realizovaný vo forme mikroprocesora. Historicky boli CPU implementované ako diskrétne komponenty a viacero malých integrovaných obvodov na jednej či viacerých doskách. Mikroprocesory sú CPU vyrábané zvyčajne na jednom integrovanom obvode. Zmenšenie veľkosti CPU prispieva k rýchlejšiemu prepínaniu, vďaka fyzickým faktorom, ako napríklad zníženej parazitickej kapacitancii. Hoci komplexnosť, veľkosť a výkon CPU sa od roku 1950 výrazne zmenili, základný dizajn a funkčnosť sa zachovali. Skoro všetky bežné CPU sa dajú pomerne presne popísať Von Neumannovou schémou.
 
-\paragraph{Práca CPU} Základnou funkciou CPI je vykonávať sekvenciu uložených inštrukcií\footnote{program}. Vykonávané inštrukcie bývajú uložené v nejakej forme \textbf{počítačovej pamäti}. Skoro všetky CPU nasledujú fetch, decode a execute kroky v ich operácii, ktoré sa spolu nazývajú \textbf{inštrukčným cyklom.}. Po vykonaní inštrukcie sa celý proces zopakuje s nasledujúcou inštrukciou označenou inkrementovanou hodnotou v registri \textbf{program counter}. 
+\paragraph{Práca CPU} Základnou funkciou CPU je vykonávať sekvenciu uložených inštrukcií\footnote{program}. Vykonávané inštrukcie bývajú uložené v nejakej forme \textbf{počítačovej pamäti}. Skoro všetky CPU nasledujú fetch, decode a execute kroky v ich operácii, ktoré sa spolu nazývajú \textbf{inštrukčným cyklom.}. Po vykonaní inštrukcie sa celý proces zopakuje s nasledujúcou inštrukciou označenou inkrementovanou hodnotou v registri \textbf{program counter}. 
 Pokiaľ sa vykonala inštrukcia \textbf{skoku}\footnote{jump}, program counter sa nastavi na cieľovú inštrukciu a vykonávanie programu prebieha ďalej normálne. Vo viac zložitých CPU sa môže vykonávať inštrukčný cyklus na viacerých inštrukciach súčasne. Niektoré inštrukcie (napríklad \textit{jump}) nemanipulujú dátami, ale zato upravujú program counter. Tým umožnujú praktiky, napr. cykly\footnote{for, while loop}, podmienené vykonávanie inštrukcií\footnote{if, switch-case} a existenciú funkcií.
 
 \paragraph{Fetch} Prvý krok zaisťuje získanie inštrukcie z pamäte programu. Adresa inštrukcie je určená hodnotou v \textbf{PC} (program counter). Keď je inštrukcia získaná, PC je inkrementovaný dĺžkou inštrukcie tak, aby obsahoval adresu nasledujúcej inštrukcie. Keďže inštrukcie bývajú uložené v relatívne pomalých pamätiach (RAM, swapfile na disku), existuje riziko, že procesor bude na inštrukciu musieť čakať. Tento problém sa v moderných architektúrach rieši použitím cache a pipeline architektúr.
@@ -137,9 +136,49 @@ Viac komplexné mikroprocesory súčasnosti obsahujú aj tzv. \textbf{jednotku p
 \end{figure}
 
 \section{Harvardská a Princetonská architektúra}
+\paragraph{Princetonská architektúra} Taktiež známa ako von Neumannová, podľa svojho autora, matematika a fyzika Johna von Neumanna. Popisuje dizajnovú architektúru pre elektronický digitálny počítač pozostávajúci z výpočtovej jednotky\footnote{Obsahujúcej aritmeticko-logickú jednotku a regitre procesoru}, riadiacej jednotky\footnote{Obsahujúcej register inštrukcií a program counter}, pamäť na uchovávanie dát a inštrucií, externé úložisko, a vstupno-výstupné mechnizmy. V počítačoch von Neumannovej architektúry sú dáta a inštrukcie ukladané do jednej pamäti, čo znamená, že načítanie inštrukcií a vykonanie operácie sa nemôže diať naraz, keďže zdieľajú zbernicu. Táto limitácia sa nazýva \textbf{von Neumannove obmedzenie}\footnote{von Neumann bottleneck} a častokrát býva limitujúcim faktorom výkonu systému. CPU musí často čakať na dodanie potrebných dát z pamäte. Keďže rýchlosť CPU a pamätí sa zvyšovali omnoho rýchlejšie ako rýchlosť zbernice medzi nimi, toto obmedzenie sa stalo väčším problémom a je nutné ho rôzne obchádzať. Najčastejšie spôsoby mitigácie obmedzenia sú použitím:
+\begin{itemize}
+\item vyrovnávacej pamäte (cache) medzi CPU a operačnou pamäťou,
+\item viacerých oddelených cache alebo oddelených prístupovýc ciest pre dáta a inštrukcie (tzv. Modifikovaná Harvardská architektúra),
+\item algoritmy predikcie vetvenia (branch predictor algorithms)
+\item limitovanej haldy alebo inej pamäte na čipe pre zniženie počtu prístupov k pamäti.
+\end{itemize} 
+
+Tento problém sa tiež dá čiastočne obísť paralelným spracovaním. Príkladom je aj Non-Uniform Memory Access (NUMA) architektúra, častokrát používaná v superpočítačoch. Vo von Neumannovej koncepcií môže dochádzať k samomeniacému kódu, čo môže mať v nepriaznivých prípadoch za následok pád programu, či samotného operačného systému. Tomuto zabraňujú mechanizmy ochrany pamäte. Niekedy však môže byť modifikácia programu za jeho chodu aj žiaduca.
+
+\begin{figure}[ht]
+        \centering
+        \includegraphics[scale=0.6]{images/Von_Neumann_Architecture}
+        \caption{Schéma konepcie Johna Von Neumanna}
+        \label{Neumann:}
+\end{figure}
+\newpage
+
+\paragraph{Harvardská architektúra} je architektúra s fyzicky oddeleným úložiskom a spojmi pre inštrukcie a dáta. Meno pochádza z počítača Harvard Mark I, postaveného na relé, ktorý uchovával inštrukcie na diernej páske a dáta v elektromechanických počítadlách. Počítače tejto éry mali dátové úložisko uzavreté v CPU a neposkytovali žiaden prístup k inštrukciam ako k dátam. Programy preto museli byť načítané operátorom, procesor sa nemohol sám inicializovať. V dnešnej dobe sa oddelené spoje používajú pre navýšenie výkonu, ale v skutočnosti sa jedná o tzv. Modifikovanú Harvardskú architektúru, ktorá umožňuje načítanie programov z diskov ako dáta a ich následné vykonanie.
+
+\subparagraph{}V Harvardskej architektúre nemusia mať dátová a inštrukčná pamäť rovnaké vlastnosti. Šírka slova, časovanie, implementácia, adresová štruktúra môžu byť rozdielne. V niektorých systémoch bývajú inštrukcie uložené len v Read-Only pamäti, pričom dáta bývajú v Read-Write pamäti. 
+
+\subparagraph{}Na rozdiel od Princetonskej architektúry, v Harvardskej môže CPU naraz čítať inštrukcie i pristupovať k dátam, bez nutnosti použiť vyrovnávajúcu pamäť. Harvardský systém môže byť preto rýchlejší pri porovnateľnej komplexnosti.
+
+\subparagraph{}Modifikovaná Harvardská architektúra sa líši od štandardnej tým, že sa v nej upúšťa od striktného oddelenia dát a inštrukcií, pričom stále umožnuje CPU naraz pristupovať k viacerým pamäťovým zberniciam. Najčastejšie modifikácie zahŕňajú oddelené vyrovnávajúce pamäte pre inštrukcie a dáta so spoločným adresným priestorom. Kým CPU pracuje s cache, správa sa ako pravý Harvardský stroj. Keď pristupuje k pamäti, jedná ako von Neumannov stroj, pričom programy môžu byť manipulované ako dáta. Táto modifikácia je bežná v moderných procesoroch, napríklad v architektúrach ARM, IBM Power, alebo x86.
+
+\subparagraph{}Napriek rozšírenosti modifikovanej varianty, aj pravá Harvardská architektúra má dodnes uplatnenie v praxi. Používa sa najmä v systémoch, kde ušetrené energetické náklady a cena z vynechania cache prekonávajú vyššie programátorské nároky.
+\begin{itemize}
+\item Digital Signal Processor (DSP) častokrát vykonávajú malé, vysoko optimalizované audio, alebo video spracujúce algoritmy. Vynechávajú cache, keďže ich správanie musí byť extrémne zopakovateľné. Náročnosť pracovania s viacerými adresnými priestormi je vedľajšia oproti nárokom na rýchlosť vykonávania. Súčasne niektoré DSP obsahujú viacero dátových pamätí s oddelenými adresnými priestormi pre uľahčenie SIMD a VLIW. Príkladom takéhoto procesora je Texas Instruments TMS320 s dvoma zbernicami na zápis, troma na čítanie a jednou pre inštrukcie.
+\item Mikrokontroléry sú charakteristické tým, že majú malé programové a datové pamäte a využívajú Harvardskú architektúru kvôli jej rýchlosti a súčasný prístup k dátam a inštrukciam. Častokrát mávajú rozdielne bitové šírky pamätí, napr. 8-bit pre dáta, 16-bit pre inštrukcie. Taktiež môžu vykonávať predprípravu inštrukcií paralelne s ostatnými aktivitami. Takýmito mikrokontrolermi sú napríklad PIC od Microchip Technology a Atmel AVR.
+
+\end{itemize}
+
+\begin{figure}[ht]
+        \centering
+        \includegraphics[scale=0.6]{images/Harvard_Architecture}
+        \caption{Schéma Harvardskej architektúry}
+        \label{Harvard:}
+\end{figure}
+\newpage
 
 
-\section{RISC a CISC} \paragraph{ISA} Architektúra inštrukčnej sady je abstraktný model poitača. Realizácia ISA sa nazýva jej implementáciou. ISA definuje všetko čo musí programátor strojového jazyka vedieť na programovanie počítača. To, čo jednotlivé ISA definujú sa líši prípad od prípadu. Vo všeobecnosti definuje podporované dátové typy, stavy a ich sémantiky, inštrukčnú sadu a I/O model. ISA sa líši od mikroarchitektúry, čo je sada dizajnových techník použitých v konkrétnom procesore na implementáciu inštrukčnej sady. Procesory rôznych mikroarchitektúr môžu mať spoločnú inštrukčnú sadu. Napríklad procesory Intel Pentium a AMD Athlon implementujú takmer totožné verzie x86 inštrukčnej sady, hoci majú radikálne odlišný vnútorný dizajn. Dve hlavné kategórie ISA sú CISC\footnote{Complex Instruction Set Computer} a RISC \footnote{Reduced Instruction Set Computer}. Hoci sa jedná o protichodné koncepty, rozdiely medzi nimi sú však občas ťažko rozpoznateľné, keďze napríklad niektorí autori opisujú mikrokontroléry PIC ako RISC, iní zas ako CISC. Taktiež procesory x86, hoci sú CISC, mnoho z nich vnútorne používa mikrokód na konverziu komplexných inštrukcí na sekvenciu jednoduchších, ktoré potom vykoná. Hovorí sa preto, že hoci x86 \textbf{inštrukčná sada} je CISC, moderná x86 \textbf{architektúra} je RISC.
+\section{RISC a CISC} \paragraph{ISA} Architektúra inštrukčnej sady je abstraktný model počítača. Realizácia ISA sa nazýva jej implementáciou. ISA definuje všetko čo musí programátor strojového jazyka vedieť na programovanie počítača. To, čo jednotlivé ISA definujú sa líši prípad od prípadu. Vo všeobecnosti definuje podporované dátové typy, stavy a ich sémantiky, inštrukčnú sadu a I/O model. ISA sa líši od mikroarchitektúry, čo je sada dizajnových techník použitých v konkrétnom procesore na implementáciu inštrukčnej sady. Procesory rôznych mikroarchitektúr môžu mať spoločnú inštrukčnú sadu. Napríklad procesory Intel Pentium a AMD Athlon implementujú takmer totožné verzie x86 inštrukčnej sady, hoci majú radikálne odlišný vnútorný dizajn. Dve hlavné kategórie ISA sú CISC\footnote{Complex Instruction Set Computer} a RISC \footnote{Reduced Instruction Set Computer}. Hoci sa jedná o protichodné koncepty, rozdiely medzi nimi sú však občas ťažko rozpoznateľné, keďze napríklad niektorí autori opisujú mikrokontroléry PIC ako RISC, iní zas ako CISC. Taktiež procesory x86, hoci sú CISC, mnoho z nich vnútorne používa mikrokód na konverziu komplexných inštrukcí na sekvenciu jednoduchších, ktoré potom vykoná. Hovorí sa preto, že hoci x86 \textbf{inštrukčná sada} je CISC, moderná x86 \textbf{architektúra} je RISC.
 
 \tabcolsep=0.10cm
 \begin{center}
@@ -177,7 +216,7 @@ Viac komplexné mikroprocesory súčasnosti obsahujú aj tzv. \textbf{jednotku p
 \subparagraph{} V 2010 sa objavila nová, open source ISA RISC-V, vyvinutá v Berkeley pre výskumné účely a ako slobodná alternatíva voči proprietárnym ISA. V súčasnosti sa objavujú prvé implementácie vo forme SiFive procesorov.
 
 
-\paragraph{ZISC}
+\paragraph{ZISC} Zero Instruction Set Computer označuje architektúru založenú čiste na priraďovaní vzorov a absencií inštrukcií v klasickom zmyysle. Tieto čipy sú porovnateľné s neurónovými sieťami, rozlišované počtom synapsí a neurónov. Prvé komerčné ZISC boli vyvinuté firmou IBM v 90. rokoch.
 
 
 
@@ -185,7 +224,96 @@ Viac komplexné mikroprocesory súčasnosti obsahujú aj tzv. \textbf{jednotku p
 
 
 \chapter{Multiprocesorový počítač a multiprocesorový systém}
-\paragraph{Korpus:} Definícia, rozdelenie podľa kategórií, stavba vnútornej pamäte. Využitie paralelných počítačov z hľadiska Flynnovej klasifikácie v súčasnosti, paralelizmus v procesoroch (porovnanie jedno a viacjadrovej architektúry, viacprocesorovej architektúry), Amdahlov zákon. Je potrebné, aby študent vedel preukázať opodstatnenosť využitia paralelizmu v súčasných typoch procesorov a počítačových systémov napr. formou Grid technológie, alebo iného spôsobu spracovania veľkého počtu požiadaviek v relatívne krátkom čase. 
+\paragraph{Korpus:} \textit{Definícia, rozdelenie podľa kategórií, stavba vnútornej pamäte. Využitie paralelných počítačov z hľadiska Flynnovej klasifikácie v súčasnosti, paralelizmus v procesoroch (porovnanie jedno a viacjadrovej architektúry, viacprocesorovej architektúry), Amdahlov zákon. Je potrebné, aby študent vedel preukázať opodstatnenosť využitia paralelizmu v súčasných typoch procesorov a počítačových systémov napr. formou Grid technológie, alebo iného spôsobu spracovania veľkého počtu požiadaviek v relatívne krátkom čase. }
+
+\paragraph{Multiprocesorový počítač, systém} je taký, kde sa na výpočtoch podiela viac ako jeden procesor. Ako taký sa za multiprocesorový systémy považujú počítače s viacjadrovými procesormi, ale aj clustere a gridy. V multiprocesorovom systéme môžu byť všetky jadrá rovnaké, alebo môžu byť niektoré rezervované pre špeciálne účely. Kombinácia hardvéru a operačného systému určuje symetriu systému. V niektorých systémoch môže byť jeden CPU reagovať na všetky Hardvérové prerušenia, kým všetka ostatná činnosť je rovnomerne distribuovaná na zvyšné jadrá. Z hľadiska symetrickosti preto takéto prípady delíme na dve  kategórie:
+\begin{itemize}
+\item Symmetric Multiprocessor System - SMP,
+\item Asymmetric Multiprocessor System - AMP,
+\end{itemize}
+
+\section{Kategorizácia podľa symetrie systému}
+\paragraph{SMP} Symetrický multiprocesing vyžaduje hardvérovú a softvérovú architektúru, kde sú dva alebo viac identické procesory prepojené na jednu zdieľanú pamäť, majú plný prístup k všetkým vstupno-výstupným zariadeniam a sú ovládané jednou inštanciou operačného systému, ktorá sa správa ku všetkým procesorom rovnako bez vyhradenia žiadneho na špeciálne účely. Väčšina dnešných multiprocesorových systémov má symetrický charakter. V prípade viacjadových procesorov sa SMP aplikuje na jadrá, správajúc sa k nim ako k separátnym procesorom. SMP systémy sú spravidla \textbf{tesne viazané multiprocesorové systémy} s množstvom homogénnych procesorov pracujúcich nezávisle od ostatých. Každý procesor vykonáva iné programy a pracuje s inými sadami dát, má možnosť zdieľať spoločné zdroje, ako sú pamäť, I/O, systém prerušení, apod., ktoré sú prepojené či už zbernicou, krížovo, alebo ako tzv. "mesh network". V prípade prepojenia zbernicou alebo krížovo je škálovateľnosť systému obmedzená priepustnosťou a energetickou náročnosťou prepojení. Mesh siete obchádzajú všetky tieto obmedzenia a prinášajú takmer lineárnu škálovateľnošt, avšak za cenu výrazne náročnejšieho programovania.
+
+\begin{figure}[ht]
+        \centering
+        \includegraphics[scale=0.4]{images/SMP}
+        \caption{Symmetric Multiproccessing System}
+        \label{SMP:}
+\end{figure}
+\newpage
+
+
+\paragraph{AMP} V prípade asymetrického multiprocesingu sa systém nespráva ku všetkým procesorom rovnako. Systém môže, napríklad, iba jednomu procesoru prideliť vykonávanie kódu operačného systému, prípadne dovoliť len jednému CPU pristupovať k I/O. Iné AMP dizajny dovolujú ktorémukoľvek CPU vykonávať kód operačného systému aj vstupno-výstupné operácie (čím sú všetky CPU symetrické vzhľadom na role procesorov), ale pripojiť niektoré periférie k špecifickým CPU, takže sú asymetrické vzhľadom na pripojenie periférií. Asymetrický multiprocesing je starším prístupom ako SMP, avšak používal sa aj v systémoch, kde bolo možné SMP, ako menej drahá alternatíva. Taktiež sa používa v dedikovaných aplikáciach, napríklad vstavaných systémoch, kde môžu byť jednotlivé procesory dedikované určitým úlohám už v štádiu dizajnovania systému. Tu môžeme ako príklad brať dizajn procesora A11 Bionic v iPhone X. Jedná sa o 6-jadrový procesor s dvoma výkonnými Monsoon jadrami a štyrmi energeticky úspornými Mistral jadrami. Tie môžu aplikáci využívať v akýchkoľvek kombináciach, i všetkých šesť naraz. Okrem toho sú do SoC integrované aj rôzne koprocesory, ako napríklad M11 motion coprocessor\footnote{Ktorý spracováva údaje z gyroskopu}, Neural Engine\footnote{Integrujúci hardvérovú neurónovú sieť}, ktorý je použítý na FaceID, Animoji a iné úlohy strojového učenia.
+
+\section{Rozdelenie z hľadiska Flynnovej klasifikácie}
+\paragraph{Flynnova taxonómia} je klasifikáciou počítačových architektúr navrhnutá Michaelom J. Flynnom v 1966. Tento systém klasifikácie pretrváva a používa sa ako nástroj pri navrhovaní moderných procesorov a ich funkcionalít. Triedy tejto klasifikácie sú: \begin{itemize}
+\item Single Instruction stream, Single Data streams - SISD,
+\item Single Instruction stream, Multiple Data streams - SIMD,
+\item Multiple Instruction stream, Single Data streams - MISD,
+\item Multile Instruction stream, Multiple Data streams - MIMD,
+\item Single Instruction, Multiple Threads - SIMT.
+\end{itemize}
+
+\paragraph{SISD} Jedná sa o sekvenčný počítač, ktorý nevyužíva žiadnu paralelizáciu či už v inštrukčnom, alebo dátovom toku. Jedna riadiaca jednotka načítava jeden inštrukčný tok z pamäte. CU potom generuje kontrolné signály na nasmerovanie jednej procesorovej jednotky na spracovanie jedného dátového toku. Prikladom sú staré jednoprocesorové PC a sálové počítače. Podľa Flynna, aj SISD môžu ma charakteristiky konkurentného spracovávania. V modernej aplikácií sa jedná procesory s pipeliningom\footnote{Technika paralelizmu na úrovní inštrukcií v jednom procesore. Pipelining sa snaží zamestnávať všetky časti proesora tým, že rozdelí prichádzajúce inštrukcie na sériu sekvenčných krkokov, vykonávaných rôznymi procesorovými jednotkami s rôznymi časťami inštrukcií vykonávaných paralelne. Pipelining umožnuje vyššiu priepustnosť CPU, avšak môže mať za následok vyššiu latenciu, kvôli réžií, ktorú vyžaduje samotný proces pipeliningu.} a superskalárne procesory\footnote{Procesory, ktoré na rozdiel od obyčajných skalárnych procesorov môžu vykonávať viacero inštrukcií v jednom cykle súčasným rozoslaním viacerých inštrukcií do rôznych výkonných jednotiek procesora. Výkonné jednotky (execution units) nie sú separátne procesory, ani jadrá, ale obvody v CPU, ako napríklad ALU.}.
+
+\begin{figure}[ht]
+        \centering
+        \includegraphics[scale=0.4]{images/SISD}
+        \caption{SISD}
+        \label{SISD:}
+\end{figure}
+
+\paragraph{SIMD} Popisuje počítače s viacerými procesnými jednotkami, ktoré vykonávajú tú istú operáciu na rôznych dátach súčasne. Takéto stroje využívajú paralelizmus na úrovni dát, avšak niek konkurenciu - vykonáva sa viacero paralelných výpočtov, ale len jeden proces (inštrukcia) v danom okamihu. SIMD sa aplikuje na bežné operácie ako napríklad úpravu kontrastu v digitálnych obrázkoch, alebo úpravu hlasitosti  digitálnom zvuku. Väčšina moderných CPU pridávajú SIMD inštrukcie pre zlepšenie výkonu v multimédiach. Ako prvý prípad širokého nasadenia SIMD v osobných počítačoch sa berú MMX\footnote{Matrix Math eXtentions} rozšírenia v Intel procesoroch v roku 1996. Nevýhodou SIMD je, že nie všetky úlohy sa dajú jednoducho vektorizovať, SIMD vyžaduje veľké registre, ktoré zvyšujú veľkosť čipu a energetickú spotrebu a programovanie pre SIMD inštrukcie sa zväčša musí robiť ručne, keďže väčšina kompilátorov negeneruje SIMD inštrukcie.
+
+\begin{figure}[ht]
+        \centering
+        \includegraphics[scale=0.25]{images/SIMD}
+        \caption{SIMD}
+        \label{SIMD:}
+\end{figure}
+\newpage
+
+\paragraph{MISD} Typ architektúry paralelného výpočtu, kde mnoho funkčných jednotiek vykonáva rôzne operácie na jednej sade dát. V praxi nepríliš bežná architektúra, keďže MIMD a SIMD bývajú viac vhodné pre bežné paralelizačné techniky a umožňujú lepšie škálovanie. Jedným z príkladov použitia MISD boli počítače letovej kontroly vesmírnych raketoplánov NASA.
+
+\begin{figure}[ht]
+        \centering
+        \includegraphics[scale=0.25]{images/MISD}
+        \caption{MISD}
+        \label{MISD:}
+\end{figure}
+
+\paragraph{MIMD} Viacero autonómnych procesorov naraz vykonávajúcich rôzne inštrukcie na rôznych dátach. Patria sem viacjadrové superskalárne procesory a distribuované systémy používajúce buď jeden zdieľaný pamäťový priestor alebo distribuovaný pamäťový priestor. Procesory v MIMD strojoch pracujú nezávisle a asynchrónne. Používajú sa v počítačovom dizajne/výrobe, simulácií, modelingu a ako komunikačné prepínače. MIMD so zdieľanou pamäťou môžu byť zbernicové, rozšírené alebo hierarchického typu. Distribuované môžu mať schémy pripojenia buď typu hyperkocky (tesseract), alebo mesh siete.
+
+\begin{figure}[ht]
+        \centering
+        \includegraphics[scale=0.25]{images/MIMD}
+        \caption{MIMD}
+        \label{MIMD:}
+\end{figure}
+
+\paragraph{SIMT} Je to model, kde sa SIMD kombinuje s multithreadingom. Pri jeho použití sa zdá, že \textit{p} počet procesorov vykonáva výrazne viac ako \textit{p} úloh. Toto sa dosahuje tým, že každý procesor má viac ako jedno "vlákno", ktoré vykonávajú úlohy naraz a sú analogické k SIMD trasám. SIMT bolo iplementované na moderných GPU a je veľmi relevantné pre tzv. GPGPU, tzn. General-Purpose computing on Graphics Processing Units.
+
+
+
+
+
+
+
+
+\section{Rozdelenie podľa viazania multiprocesorového systému}
+\paragraph{Viazanosť multiprocesorového systému} je daná spôsobom implementácie operačnej pamäte. Podľa nej rozlišujeme multiprocesory na:
+\begin{itemize}
+\item Tesne viazané multiprocesorové systémy,
+\item Voľne viazané multiprocesorové systémy.
+\end{itemize}
+
+\paragraph{Tesne viazané systémy} obsahujú viacero CPU, ktoré sú spojené na úrovni zbernice. Tieto CPU majú prístup k centrálnej zdieľanej pamäti (SMP, alebo UMA), alebo sa zúčastňujú v pamäťovej hierarchií s lokálnou aj zdieľanou pamäťou (SM alebo NUMA). Najextrémnejšou formou tesne viazaného multiprocesorového systému sú viacjadrové mikroprocesory, v ktorých je viacero procesorov uložených na jednom čipe.
+\subparagraph{UMA} Uniform memory access
+\subparagraph{NUMA}
+
+\paragraph{Voľne viazané systémy} Častokrát sú označované ako clustere. Bývajú založené na viacerých jedno, či dvojprocesorových počítačoch prepojených vysokorýchlostnými komunikačnými systémami, ako je napr. Gigabitový ethernet. Príkladom takéhoto clusteru je Beowulf cluster postavený na unixových platformách. 
+
 
 \chapter{Bezpečnosť technických prostriedkov, NAS servery}
 \paragraph{Korpus:}Bezpečnosť technických prostriedkov a ukladania dát na Slovensku, problematika DAS (Direct Attached Storage), NAS (Network Attached Storage) a SAN (Storage Area Network) a Fault Tolerant systémy. Študent musí vedieť definovať výhody nasadenia SAN, z čoho pozostáva dnešné typické SAN riešenie. 

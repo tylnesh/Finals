@@ -12,51 +12,70 @@
 \contentsline {paragraph}{Registre}{4}
 \contentsline {paragraph}{Jednotka pride\IeC {\v l}ovania pam\IeC {\"a}te}{5}
 \contentsline {section}{\numberline {1.2}Harvardsk\IeC {\'a} a Princetonsk\IeC {\'a} architekt\IeC {\'u}ra}{5}
-\contentsline {section}{\numberline {1.3}RISC a CISC}{5}
-\contentsline {paragraph}{ISA}{5}
-\contentsline {paragraph}{CISC}{6}
-\contentsline {subparagraph}{V\IeC {\'y}hody CISC}{6}
-\contentsline {subparagraph}{Prid\IeC {\'a}vanie in\IeC {\v s}trukc\IeC {\'\i }}{6}
-\contentsline {subparagraph}{Nev\IeC {\'y}hody dizajnu}{6}
-\contentsline {paragraph}{RISC}{6}
+\contentsline {paragraph}{Princetonsk\IeC {\'a} architekt\IeC {\'u}ra}{5}
+\contentsline {paragraph}{Harvardsk\IeC {\'a} architekt\IeC {\'u}ra}{6}
 \contentsline {subparagraph}{}{6}
-\contentsline {subparagraph}{}{7}
-\contentsline {paragraph}{ZISC}{7}
-\contentsline {chapter}{\numberline {2}Multiprocesorov\IeC {\'y} po\IeC {\v c}\IeC {\'\i }ta\IeC {\v c} a multiprocesorov\IeC {\'y} syst\IeC {\'e}m}{8}
-\contentsline {paragraph}{Korpus:}{8}
-\contentsline {chapter}{\numberline {3}Bezpe\IeC {\v c}nos\IeC {\v t} technick\IeC {\'y}ch prostriedkov, NAS servery}{9}
-\contentsline {paragraph}{Korpus:}{9}
-\contentsline {chapter}{\numberline {4}Riadiace po\IeC {\v c}\IeC {\'\i }ta\IeC {\v c}e a ich vyu\IeC {\v z}itie v priemyselnej technike}{10}
+\contentsline {subparagraph}{}{6}
+\contentsline {subparagraph}{}{6}
+\contentsline {subparagraph}{}{6}
+\contentsline {section}{\numberline {1.3}RISC a CISC}{8}
+\contentsline {paragraph}{ISA}{8}
+\contentsline {paragraph}{CISC}{8}
+\contentsline {subparagraph}{V\IeC {\'y}hody CISC}{8}
+\contentsline {subparagraph}{Prid\IeC {\'a}vanie in\IeC {\v s}trukc\IeC {\'\i }}{8}
+\contentsline {subparagraph}{Nev\IeC {\'y}hody dizajnu}{9}
+\contentsline {paragraph}{RISC}{9}
+\contentsline {subparagraph}{}{9}
+\contentsline {subparagraph}{}{9}
+\contentsline {paragraph}{ZISC}{9}
+\contentsline {chapter}{\numberline {2}Multiprocesorov\IeC {\'y} po\IeC {\v c}\IeC {\'\i }ta\IeC {\v c} a multiprocesorov\IeC {\'y} syst\IeC {\'e}m}{10}
 \contentsline {paragraph}{Korpus:}{10}
-\contentsline {chapter}{\numberline {5}Cloud computing}{11}
-\contentsline {paragraph}{Korpus:}{11}
-\contentsline {chapter}{\numberline {6}Distribuovan\IeC {\'e} syst\IeC {\'e}my a distribuovan\IeC {\'e} v\IeC {\'y}po\IeC {\v c}ty}{12}
-\contentsline {paragraph}{Korpus:}{12}
-\contentsline {chapter}{\numberline {7}Migr\IeC {\'a}cia procesov}{13}
-\contentsline {paragraph}{Korpus:}{13}
-\contentsline {chapter}{\numberline {8}Medziprocesov\IeC {\'a} komunik\IeC {\'a}cia}{14}
+\contentsline {paragraph}{Multiprocesorov\IeC {\'y} po\IeC {\v c}\IeC {\'\i }ta\IeC {\v c}, syst\IeC {\'e}m}{10}
+\contentsline {section}{\numberline {2.1}Kategoriz\IeC {\'a}cia pod\IeC {\v l}a symetrie syst\IeC {\'e}mu}{10}
+\contentsline {paragraph}{SMP}{10}
+\contentsline {paragraph}{AMP}{11}
+\contentsline {section}{\numberline {2.2}Rozdelenie z h\IeC {\v l}adiska Flynnovej klasifik\IeC {\'a}cie}{11}
+\contentsline {paragraph}{Flynnova taxon\IeC {\'o}mia}{11}
+\contentsline {paragraph}{SISD}{12}
+\contentsline {paragraph}{SIMD}{12}
+\contentsline {paragraph}{MISD}{13}
+\contentsline {paragraph}{MIMD}{13}
+\contentsline {paragraph}{SIMT}{13}
+\contentsline {section}{\numberline {2.3}Rozdelenie pod\IeC {\v l}a viazania multiprocesorov\IeC {\'e}ho syst\IeC {\'e}mu}{13}
+\contentsline {paragraph}{}{13}
+\contentsline {chapter}{\numberline {3}Bezpe\IeC {\v c}nos\IeC {\v t} technick\IeC {\'y}ch prostriedkov, NAS servery}{14}
 \contentsline {paragraph}{Korpus:}{14}
-\contentsline {chapter}{\numberline {9}Synchroniz\IeC {\'a}cia hod\IeC {\'\i }n}{15}
+\contentsline {chapter}{\numberline {4}Riadiace po\IeC {\v c}\IeC {\'\i }ta\IeC {\v c}e a ich vyu\IeC {\v z}itie v priemyselnej technike}{15}
 \contentsline {paragraph}{Korpus:}{15}
-\contentsline {chapter}{\numberline {10}Bezdr\IeC {\^o}tov\IeC {\'e} senzorov\IeC {\'e} siete}{16}
+\contentsline {chapter}{\numberline {5}Cloud computing}{16}
 \contentsline {paragraph}{Korpus:}{16}
-\contentsline {chapter}{\numberline {11}Charakteristika expertn\IeC {\'y}ch syst\IeC {\'e}mov}{17}
+\contentsline {chapter}{\numberline {6}Distribuovan\IeC {\'e} syst\IeC {\'e}my a distribuovan\IeC {\'e} v\IeC {\'y}po\IeC {\v c}ty}{17}
 \contentsline {paragraph}{Korpus:}{17}
-\contentsline {chapter}{\numberline {12}Reprezent\IeC {\'a}cia znalost\IeC {\'\i }}{18}
+\contentsline {chapter}{\numberline {7}Migr\IeC {\'a}cia procesov}{18}
 \contentsline {paragraph}{Korpus:}{18}
-\contentsline {chapter}{\numberline {13}Odovodzovac\IeC {\'\i } mechanizmus}{19}
+\contentsline {chapter}{\numberline {8}Medziprocesov\IeC {\'a} komunik\IeC {\'a}cia}{19}
 \contentsline {paragraph}{Korpus:}{19}
-\contentsline {chapter}{\numberline {14}Zlo\IeC {\v z}ky znalostn\IeC {\'e}ho syst\IeC {\'e}mu a tvorba znalostn\IeC {\'y}ch syst\IeC {\'e}mov}{20}
+\contentsline {chapter}{\numberline {9}Synchroniz\IeC {\'a}cia hod\IeC {\'\i }n}{20}
 \contentsline {paragraph}{Korpus:}{20}
-\contentsline {chapter}{\numberline {15}Rozhodovacie stromy}{21}
+\contentsline {chapter}{\numberline {10}Bezdr\IeC {\^o}tov\IeC {\'e} senzorov\IeC {\'e} siete}{21}
 \contentsline {paragraph}{Korpus:}{21}
-\contentsline {chapter}{\numberline {16}Z\IeC {\'a}kladn\IeC {\'e} pojmy v kybernetike}{22}
+\contentsline {chapter}{\numberline {11}Charakteristika expertn\IeC {\'y}ch syst\IeC {\'e}mov}{22}
 \contentsline {paragraph}{Korpus:}{22}
-\contentsline {chapter}{\numberline {17}Kybernetick\IeC {\'y} syst\IeC {\'e}m, riadenie dynamick\IeC {\'y}ch syst\IeC {\'e}mov}{23}
+\contentsline {chapter}{\numberline {12}Reprezent\IeC {\'a}cia znalost\IeC {\'\i }}{23}
 \contentsline {paragraph}{Korpus:}{23}
-\contentsline {chapter}{\numberline {18}Typy kybernetick\IeC {\'y}ch syst\IeC {\'e}mov a prvky ich riadenia}{24}
+\contentsline {chapter}{\numberline {13}Odovodzovac\IeC {\'\i } mechanizmus}{24}
 \contentsline {paragraph}{Korpus:}{24}
-\contentsline {chapter}{\numberline {19}Prostriedky automatick\IeC {\'e}ho riadenia v kybernetike}{25}
+\contentsline {chapter}{\numberline {14}Zlo\IeC {\v z}ky znalostn\IeC {\'e}ho syst\IeC {\'e}mu a tvorba znalostn\IeC {\'y}ch syst\IeC {\'e}mov}{25}
 \contentsline {paragraph}{Korpus:}{25}
-\contentsline {chapter}{\numberline {20}Automatizovan\IeC {\'e} syst\IeC {\'e}my}{26}
+\contentsline {chapter}{\numberline {15}Rozhodovacie stromy}{26}
 \contentsline {paragraph}{Korpus:}{26}
+\contentsline {chapter}{\numberline {16}Z\IeC {\'a}kladn\IeC {\'e} pojmy v kybernetike}{27}
+\contentsline {paragraph}{Korpus:}{27}
+\contentsline {chapter}{\numberline {17}Kybernetick\IeC {\'y} syst\IeC {\'e}m, riadenie dynamick\IeC {\'y}ch syst\IeC {\'e}mov}{28}
+\contentsline {paragraph}{Korpus:}{28}
+\contentsline {chapter}{\numberline {18}Typy kybernetick\IeC {\'y}ch syst\IeC {\'e}mov a prvky ich riadenia}{29}
+\contentsline {paragraph}{Korpus:}{29}
+\contentsline {chapter}{\numberline {19}Prostriedky automatick\IeC {\'e}ho riadenia v kybernetike}{30}
+\contentsline {paragraph}{Korpus:}{30}
+\contentsline {chapter}{\numberline {20}Automatizovan\IeC {\'e} syst\IeC {\'e}my}{31}
+\contentsline {paragraph}{Korpus:}{31}
